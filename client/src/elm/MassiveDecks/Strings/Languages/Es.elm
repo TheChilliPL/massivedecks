@@ -1,11 +1,30 @@
-module MassiveDecks.Strings.Languages.En.Internal exposing (translate)
+module MassiveDecks.Strings.Languages.Es exposing (pack)
 
+{-| Spanish localization.
+
+Contributors:
+
+  - TheChilliPL <https://github.com/TheChilliPL>
+
+-}
+
+import MassiveDecks.Card.Source.BuiltIn.Model as BuiltIn
+import MassiveDecks.Card.Source.Model as Source
 import MassiveDecks.Strings exposing (MdString(..), Noun(..), Quantity(..), noun, nounMaybe, nounUnknownQuantity)
+import MassiveDecks.Strings.Languages.Model exposing (Language(..))
+import MassiveDecks.Strings.Translation as Translation
 import MassiveDecks.Strings.Translation.Model as Translation exposing (Result(..))
 
+pack : Translation.Pack
+pack =
+    Translation.pack
+        { lang = Es
+        , code = "es"
+        , name = Spanish
+        , translate = translate
+        , recommended = "cah-base-en" |> BuiltIn.hardcoded |> Source.BuiltIn
+        }
 
-{-| The English translation
--}
 translate : Maybe never -> MdString -> List (Translation.Result never)
 translate _ mdString =
     case mdString of
@@ -14,132 +33,141 @@ translate _ mdString =
             [ Text "Massive Decks" ]
 
         Close ->
-            [ Text "Close" ]
+            [ Text "Cerrar" ]
 
         Noun { noun, quantity } ->
             let
                 singular =
                     case noun of
                         Call ->
-                            [ Text "Black Card" ]
+                            [ Text "Carta Negra" ]
 
                         Response ->
-                            [ Text "White Card" ]
+                            [ Text "Carta Blanca" ]
 
                         Point ->
-                            [ Text "Awesome Point" ]
+                            [ Text "Punto Genial" ] --TODO
 
                         Player ->
-                            [ Text "Player" ]
+                            [ Text "Jugador" ]
 
                         Spectator ->
-                            [ Text "Spectator" ]
+                            [ Text "Espectador" ]
 
                 plural =
-                    case quantity of
-                        Quantity 1 ->
-                            []
+                    case noun of
+                        Call ->
+                            [ Text "Cartas Negras" ]
 
-                        _ ->
-                            [ Text "s" ]
+                        Response ->
+                            [ Text "Cartas Blancas" ]
+
+                        Point ->
+                            [ Text "Puntos Geniales" ] --TODO
+
+                        Player ->
+                            [ Text "Jugadores" ]
+
+                        Spectator ->
+                            [ Text "Espectadores" ]
             in
             List.concat [ singular, plural ]
 
         -- Start screen.
         Version { versionNumber } ->
-            [ Text "Version “", Text versionNumber, Text "”" ]
+            [ Text "Versión «", Text versionNumber, Text "»" ]
 
         ShortGameDescription ->
-            [ Text "A comedy party game." ]
+            [ Text "Un juego cómico de fiesta." ]
 
         WhatIsThis ->
-            [ Text "What is ", ref MassiveDecks, Text "?" ]
+            [ Text "¿Qué es ", ref MassiveDecks, Text "?" ]
 
         GameDescription ->
             [ ref MassiveDecks
-            , Text " is a comedy party game based on "
+            , Text " es un juego cómico de fiesta, basado en "
             , ref CardsAgainstHumanity
-            , Text ", developed by "
+            , Text ", desarrollado por "
             , ref RereadGames
-            , Text " and other contributors—the game is open source under "
+            , Text " y otros colaboradores: el juego es open source con "
             , ref License
-            , Text ", so you can help improve the game, access the source code, or just find out more at "
+            , Text ", así que puedes ayudar a mejorar el juego, acceder a código fuente, o solo averiguar más en "
             , ref MDProject
             , Text "."
             ]
 
         NewGame ->
-            [ Text "New" ]
+            [ Text "Nueva" ]
 
         NewGameDescription ->
-            [ Text "Start a new game of ", ref MassiveDecks, Text "." ]
+            [ Text "Empezar una partida nueva de ", ref MassiveDecks, Text "." ]
 
         FindPublicGame ->
-            [ Text "Find" ]
+            [ Text "Hallar" ]
 
         JoinPrivateGame ->
-            [ Text "Join" ]
+            [ Text "Juntar" ]
 
         JoinPrivateGameDescription ->
-            [ Text "Join a game someone invited you to." ]
+            [ Text "Juntar a la partida a la que alguien te invitó." ]
 
         PlayGame ->
-            [ Text "Play" ]
+            [ Text "Jugar" ]
 
         AboutTheGame ->
-            [ Text "About" ]
+            [ Text "Sobre" ] --TODO
 
         AboutTheGameDescription ->
-            [ Text "Find out about ", ref MassiveDecks, Text " and how it is developed." ]
+            [ Text "Averiguar más de ", ref MassiveDecks, Text " y de cómo está desarrollado." ]
 
         MDLogoDescription ->
-            [ Text "A ", ref (noun Call 1), Text " and a ", ref (noun Response 1), Text " marked with an “M” and a “D”." ]
+            [ Text "Una ", ref (noun Call 1), Text " y una ", ref (noun Response 1), Text " marcados con una «M» y una «D»." ]
 
         RereadLogoDescription ->
-            [ Text "A book circled by a recycling arrow." ]
+            [ Text "Un libro cercado por una flecha de reciclaje." ]
 
         MDProject ->
-            [ Text "the GitHub project" ]
+            [ Text "el proyecto de GitHub" ]
 
         License ->
-            [ Text "the AGPLv3 license" ]
+            [ Text "licencia AGPLv3" ]
 
         DevelopedByReread ->
-            [ Text "Developed by ", ref RereadGames, Text "." ]
+            [ Text "Desarrollado por ", ref RereadGames, Text "." ]
 
         RereadGames ->
             [ Text "Reread Games" ]
 
         NameLabel ->
-            [ Text "Your Name" ]
+            [ Text "Tu nombre" ]
 
         NameInUse ->
-            [ Text "Someone else is using this name in the game—please try a different one." ]
+            [ Text "Alguien más está usando ese nombre en la partida: prueba selectar un otro." ]
 
         RejoinTitle ->
-            [ Text "Rejoin Game" ]
+            [ Text "Volver a juntar" ] --TODO o volver a la partida
 
         RejoinGame { code } ->
-            [ Text "Rejoin “", GameCode { code = code } |> ref, Text "”." ]
+            [ Text "Volver a juntar la partida «", GameCode { code = code } |> ref, Text "»." ]
 
         LobbyRequiresPassword ->
-            [ Text "You need a password to join this game. Try asking the person that invited you." ]
+            [ Text "Necesitas una contraseña para juntar a esta partida. Pregunta a la persona que te invitó." ]
 
         YouWereKicked ->
-            [ Text "You were kicked from the game." ]
+            [ Text "Te echaron de esta partida." ]
 
         ScrollToTop ->
-            [ Text "Scroll to the top." ]
+            [ Text "Desplazar a la cima." ]
 
         Copy ->
-            [ Text "Copy" ]
+            [ Text "Copiar" ]
 
         -- Rules
         CardsAgainstHumanity ->
-            [ Text "Cards Against Humanity" ]
+            [ Text "Cartas Contra la Humanidad" ]
 
         Rules ->
-            [ Text "How to play." ]
+            [ Text "Cómo jugar." ]
 
         RulesHand ->
             [ Text "Each player has a hand of ", ref (nounUnknownQuantity Response), Text "." ]

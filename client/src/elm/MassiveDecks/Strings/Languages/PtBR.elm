@@ -1249,6 +1249,9 @@ translate _ mdString =
         Indonesian ->
             [ Text "Indonésio" ]
 
+        Spanish ->
+            [ Text "Espanhol" ]
+
 
 an : Maybe Int -> String
 an amount =
