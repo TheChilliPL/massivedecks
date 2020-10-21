@@ -32,7 +32,7 @@
     [["Nowe zalecenia linii lotniczych zabraniają ", {}, " w samolocie."]],
     [
       [
-        "Następny od J.K. Rowling: ", //TODO
+        "Następny od J.K. Rowling: ",
         {
           text: "Harry Potter i Komnata ",
           style: "Em",
@@ -105,7 +105,7 @@
       ],
       ["Becha can’t have just one!"], //TODO
     ],
-    [["Dzieciaki, nie potrzebuję narkotyków by być na haju. Mam ", {}, "."]], //TODO
+    [["Dzieciaki, nie potrzebuję narkotyków by być na haju. Mam ", {}, "."]],
     [["Jako moja kolejna sztuczka, wyciągnę ", {}, " z ", {}, "."]],
     [
       [
@@ -240,7 +240,7 @@
         {
           transform: "Capitalize",
         },
-        " to śliskie zbocze prowadzące do ", //TODO
+        " to śliskie zbocze prowadzące do ",
         {},
         ".",
       ],
@@ -333,7 +333,7 @@
       ["PEWNIE JESTEŚ WSIOKIEM."],
     ],
     [
-      ["Make a haiku."], //TODO Haiku vs trzywyrazowy wiersz
+      ["Napisz haiku."],
       [
         {
           transform: "Capitalize",
@@ -387,7 +387,7 @@
       ],
     ],
     [
-      ["Co byłoby dla babci niepokojące, a jednocześnie dziwnie czarujące?"], //TODO
+      ["Co byłoby dla babci niepokojące, a jednocześnie dziwnie czarujące?"],
       [
         {
           transform: "Capitalize",
@@ -402,10 +402,10 @@
         },
         ".",
       ],
-      ["To było takie metalowe."], //TODO
+      ["To było takie metalowe."],
     ],
     [["Nigdy w pełni nie rozumiałem ", {}, " zanim nie spotkałem ", {}, "."]],
-    [["Podczas seksu, lubię myśleć o ", {}, "."]], //TODO
+    [["Podczas seksu, lubię myśleć o ", {}, "."]],
     [
       ["Co zakończyło mój ostatni związek?"],
       [
@@ -464,7 +464,7 @@
       ],
     ],
     [
-      ["Co sprawi że zawsze kogoś zaliczysz?"], //TODO
+      ["Co sprawi że zawsze kogoś zaliczysz?"],
       [
         {
           transform: "Capitalize",
@@ -593,7 +593,7 @@
     "ukrzyżowanie",
     "Jennifer Lawrence", //TODO
     "72 dziewice",
-    "publiczność w studiu na żywo", //TODO
+    "publiczność w studiu na żywo",
     "paradoks podróży w czasie",
     "autentyczna Meksykańska kuchnia",
     "dokonywanie przestępstw",
@@ -603,21 +603,21 @@
     "uzywane majtki",
     "pierd tak potężny że budzi gigantów z ich tysiącletniego uśpienia",
     "dawny prezydent George W. Bush", //TODO Lech Wałęsa? Andrzej Duda?
-    "pełna nagość od przodu", //TODO
+    "pełna nagość od przodu",
     "pokrywanie się serem Parmezan i płatkami chili ponieważ jestem pizzą",
     "znoszenie jajka",
     "rozbieranie się i oglądanie Nickelodeon", //TODO Cartoon Network?
     "udawanie że ci zależy",
     "posiadanie wielkich marzeń bez żadnego sposobu na ich osiągnięcie",
     "zobaczenie gołej babci",
-    "gile z nosa", //TODO
+    "gile z nosa",
     "nieunikniona śmierć cieplna wszechświata",
     "cud narodzin dziecka",
     "rozkosz",
-    "biczowanie", //TODO
+    "biczowanie",
     "przywilej białych",
     "wyłonienie się z morza i furia przez Tokio",
-    "hamburgerowy złodziej", //TODO
+    "hamburgerowy złodziej",
     "Dezodorant AXE",
     "krew Chrystusa",
     "delikatny pocałunkowy seks misjonarski",
@@ -625,7 +625,7 @@
     "agrokultura", //TODO rolnictwo?
     "zarabianie minimalnej krajowej",
     "selekcja naturalna",
-    "aborcja wieszakiem", //TODO
+    "aborcja wieszakiem",
     "seks z Patrickiem Stewartem",
     "mój nadpobudliwy chłopak który serio nie jest taki zły jak się go pozna",
     "leki przeciwbólowe na receptę",
@@ -639,7 +639,7 @@
     "prawie martwy staruch",
     "Kanye West", //TODO
     "hot cheese", //TODO
-    "ataki welociraptora", //TODO
+    "ataki welociraptora",
     "siedmiu martwych i trzech w stanie krytycznym",
     "smegma",
     "alkoholizm",
@@ -648,11 +648,11 @@
     "objadanie się z przeczyszczeniem",
     "przewymiarowany lizak",
     "wstręt do samego siebie",
-    "siadanie mi na twarzy i mówienie że jestem śmieciem", //TODO
+    "siadanie mi na twarzy i nazywanie mnie śmieciem",
     "gra wstępna na pół dupy",
     "Biblia Święta",
     "niemieckie porno w lochach",
-    "bycie w ogniu", //TODO
+    "bycie w ogniu",
     "nastoletnia ciąża",
     "Gandhi",
     "twój dziwny brat",
@@ -666,16 +666,16 @@
     "nauka",
     "oral bez odwzajemnienia",
     "nielotne ptaki",
-    "dobre wciągnięcie nosem", //TODO
-    "50 000 woltów prosto w sutki", //TODO voltów?
+    "dobre wciągnięcie nosem",
+    "50 000 woltów prosto w sutki",
     "zbilansowane śniadanie",
     "wszędzie martwe ptaki",
     "przybycie pizzy",
-    "Zespół Stałego Orgazmu", //TODO
+    "Zespół Stałego Orgazmu",
     "chłodny, orzeźwiający smak Pepsi®",
     "broń chemiczna",
     "Pytanie na Śniadanie", //TODO
-    "zastanawianie się czy można wziąć trochę tej salsy na wynos", //TODO
+    "zastanawianie się, czy można wziąć trochę tej salsy na wynos",
     "banany",
     "pasywno-agresywne karteczki samoprzylepne",
     "maile Hillary Clinton",
@@ -685,11 +685,11 @@
     "Żydzi",
     "mój zdradzający skurwysynski mąż",
     "potężne uda",
-    "te dziwki", //TODO
+    "te dziwki",
     "jedyny gej w promieniu 150 km",
     "uprawianie seksu po raz pierwszy",
     "Donald J. Trump",
-    "pocałowanie babci w czoło i wyłączenie systemu podtrzymywania życia", //TODO
+    "pocałowanie babci w czoło i wyłączenie systemu podtrzymywania życia",
     "napięcie seksualne",
     "karabin szturmowy AR-15",
     "mój dobry stanik",
@@ -699,15 +699,15 @@
     "słodka, słodka zemsta",
     "Republikanie",
     "wąchanie i lizanie mi stóp",
-    "sporo młodsze kobiety", //TODO
+    "sporo młodsze kobiety",
     "bieda",
     "piloci kamikaze",
     "popełnienie samobójstwa",
-    "gejowska agenda", //TODO ideologia LGBT?
+    "ideologia LGBT",
     "Meksykanin",
     "sokół z czapką na głowie",
-    "czarodziejska muzyka", //TODO
-    "oranżady w proszku", //TODO
+    "czarodziejska muzyka",
+    "oranżady w proszku",
     "wapowanie",
     "darmowe próbki",
     "krzywdzenie najbliższych",
@@ -727,12 +727,12 @@
     "50 miligramów anty\u00addepresantów",
     "jebanie mojej siostry",
     "wiązanie trzech penisów w warkocz",
-    "jazz hands pełne wigoru", //TODO
+    "jazz hands pełne wigoru",
     "dostawanie palcówki",
     "mój kierowca Ubera, Paweł",
     "Danonki®",
     "brutalność policyjna",
-    "filling my briefcase with business stuff", //TODO
+    "wypiełnianie walizki sprawami biznesowymi",
     "młodzież",
     "moja gruba córka",
     "muzyka rap",
@@ -741,9 +741,9 @@
     "walenie ze smutkiem",
     "dokładnie to, czego się spodziewasz",
     "próba beknięcia kończąca się rzyganiem na podłogę",
-    "lek na ADHD", //TODO
+    "lek na ADHD",
     "cholernie ostre papryczki chili",
-    "sideboob", //TODO
+    "piersi widziane z boku",
     "ośmiornica masturbująca siedem osób z papierosem w ósmej macce",
     "my neck, my back, my pussy, and my crack", //TODO
     "J. D. Power and his associates", //TODO
@@ -756,7 +756,7 @@
     "niewinne zasugerowanie trójkąta",
     "sperma na wyczerpaniu",
     "bóg",
-    "orientalne zwiedzanie", //TODO
+    "orientalne zwiedzanie",
     "sikanie podczas seksu",
     "emocje",
     "przywłaszczanie rzeczy lizaniem",
@@ -765,7 +765,7 @@
     "samozapłon",
     "finał serialu „Rolnik szuka żony”",
     "rzucanie winogron w faceta aż straci kontakt z rzeczywi\u00adstością",
-    "ustanowienie dominacji", //TODO
+    "ustanowienie dominacji",
     "malowanie palcami",
     "smród starych osób",
     "bycie zmiażdżonym przez maszynę z napojami",
@@ -797,7 +797,7 @@
     "Moc",
     "jak zajebiście jest być na grzybkach",
     "ocenianie wszystkich",
-    "rodzina Kiepskich", //TODO
+    "rodzina Kiepskich",
     "ślub, spłodzenie kilku dzieci, kupienie paru rzeczy, spierdolenie na Bieszczady i śmierć",
     "w końcu cholerny święty spokój",
     "AIDS",
@@ -806,7 +806,7 @@
     "trochę podkładu, tusz do rzęs i nieco różu",
     "hospicjum",
     "bycie bardzo na haju",
-    "epidemia heroiny", //TODO
+    "epidemia heroiny",
     "zazdroszczenie fiuta",
     "terapia konwersyjna",
     "Sędzia Wesołowska brutalnie miażdżąca młotkiem twoje jaja",
